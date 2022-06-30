@@ -53,16 +53,16 @@ def post_init_hook(cr, registry):
                     warehouse_id=whs.id, color=color, sequence_id=sequence.id,
                 )
                 data[picking_type] = stock_picking_type.create(values).id
-
-        rma_out_type = stock_picking_type.browse(data["rma_out_type_id"])
-        rma_out_type.write(
-            {"return_picking_type_id": data.get("rma_in_type_id", False)}
-        )
-        rma_in_type = stock_picking_type.browse(data["rma_in_type_id"])
-        rma_in_type.write(
-            {"return_picking_type_id": data.get("rma_out_type_id", False)}
-        )
-        whs.write(data)
+        if data:
+            rma_out_type = stock_picking_type.browse(data["rma_out_type_id"])
+            rma_out_type.write(
+                {"return_picking_type_id": data.get("rma_in_type_id", False)}
+            )
+            rma_in_type = stock_picking_type.browse(data["rma_in_type_id"])
+            rma_in_type.write(
+                {"return_picking_type_id": data.get("rma_out_type_id", False)}
+            )
+            whs.write(data)
 
     # Create rma locations and picking types
     warehouses = env["stock.warehouse"].search([])
