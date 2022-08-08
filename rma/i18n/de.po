@@ -14,7 +14,7 @@ msgstr ""
 "X-Crowdin-File: /[AmetrasIntelligence.rma] 13.0/rma/i18n/rma.pot\n"
 "X-Crowdin-File-ID: 4746\n"
 "Language: de_DE\n"
-"PO-Revision-Date: 2022-08-06 23:53\n"
+"PO-Revision-Date: 2022-08-08 02:07\n"
 
 #. module: rma
 #: model:mail.template,report_name:rma.mail_template_rma_notification
@@ -748,7 +748,7 @@ msgstr "Fehler beim Versenden der Nachrichten"
 #: model:ir.model.fields,field_description:rma.field_rma__message_ids
 #: model:ir.model.fields,field_description:rma.field_rma_team__message_ids
 msgid "Messages"
-msgstr "Mitteilungen"
+msgstr "Nachrichten"
 
 #. module: rma
 #: code:addons/rma/controllers/main.py:0
