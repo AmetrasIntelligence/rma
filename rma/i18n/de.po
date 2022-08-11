@@ -14,7 +14,7 @@ msgstr ""
 "X-Crowdin-File: /[AmetrasIntelligence.rma] 13.0/rma/i18n/rma.pot\n"
 "X-Crowdin-File-ID: 4746\n"
 "Language: de_DE\n"
-"PO-Revision-Date: 2022-08-11 09:53\n"
+"PO-Revision-Date: 2022-08-11 10:58\n"
 
 #. module: rma
 #: model:mail.template,report_name:rma.mail_template_rma_notification
@@ -1384,7 +1384,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:rma.rma_split_wizard_view_form2
 #: model_terms:ir.ui.view,arch_db:rma.rma_view_form
 msgid "Split"
-msgstr ""
+msgstr "Aufteilen"
 
 #. module: rma
 #: model:ir.actions.act_window,name:rma.rma_split_wizard_action
