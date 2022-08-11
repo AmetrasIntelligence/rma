@@ -14,7 +14,7 @@ msgstr ""
 "X-Crowdin-File: /[AmetrasIntelligence.rma] 13.0/rma/i18n/rma.pot\n"
 "X-Crowdin-File-ID: 4746\n"
 "Language: de_DE\n"
-"PO-Revision-Date: 2022-08-11 14:36\n"
+"PO-Revision-Date: 2022-08-11 15:47\n"
 
 #. module: rma
 #: model:mail.template,report_name:rma.mail_template_rma_notification
@@ -206,7 +206,7 @@ msgstr "<strong>Menge</strong>"
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.portal_rma_page
 msgid "<strong>RMA Date</strong>"
-msgstr ""
+msgstr "<strong>RMA Datum</strong>"
 
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.report_rma_document
@@ -222,7 +222,7 @@ msgstr ""
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.report_rma_document
 msgid "<strong>State:</strong>"
-msgstr ""
+msgstr "<strong>Status:</strong>"
 
 #. module: rma
 #: model:ir.model.fields,help:rma.field_rma_team__alias_defaults
@@ -390,7 +390,7 @@ msgstr "Konfigurationseinstellung"
 #. module: rma
 #: model:ir.ui.menu,name:rma.rma_configuration_menu
 msgid "Configuration"
-msgstr ""
+msgstr "Konfiguration"
 
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.rma_view_form
@@ -401,7 +401,7 @@ msgstr "Bestätigen"
 #: model:ir.model.fields.selection,name:rma.selection__rma__state__confirmed
 #: model_terms:ir.ui.view,arch_db:rma.rma_view_search
 msgid "Confirmed"
-msgstr ""
+msgstr "Bestätigt"
 
 #. module: rma
 #: model:ir.model,name:rma.model_res_partner
@@ -484,7 +484,7 @@ msgstr ""
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_rma__delivered_qty
 msgid "Delivered qty"
-msgstr ""
+msgstr "Gelieferte Menge"
 
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_rma__delivered_qty_done
@@ -547,7 +547,7 @@ msgstr ""
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.res_config_settings_view_form
 msgid "Email Template"
-msgstr ""
+msgstr "Email Vorlage"
 
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_res_company__rma_mail_confirmation_template_id
@@ -650,7 +650,7 @@ msgstr ""
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_rma__partner_invoice_id
 msgid "Invoice Address"
-msgstr ""
+msgstr "Rechnungsadresse"
 
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_rma__message_is_follower
@@ -716,7 +716,7 @@ msgstr "Sperre"
 #. module: rma
 #: model:ir.model.fields.selection,name:rma.selection__rma__state__locked
 msgid "Locked"
-msgstr ""
+msgstr "Gesperrt"
 
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_rma__message_main_attachment_id
