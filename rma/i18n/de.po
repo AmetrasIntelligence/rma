@@ -14,7 +14,7 @@ msgstr ""
 "X-Crowdin-File: /[AmetrasIntelligence.rma] 13.0/rma/i18n/rma.pot\n"
 "X-Crowdin-File-ID: 4746\n"
 "Language: de_DE\n"
-"PO-Revision-Date: 2022-08-11 10:58\n"
+"PO-Revision-Date: 2022-08-11 14:36\n"
 
 #. module: rma
 #: model:mail.template,report_name:rma.mail_template_rma_notification
@@ -64,7 +64,8 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:rma.portal_rma_page
 msgid "<i class=\"fa fa-fw fa-check\"/>\n"
 "                                <b>Paid</b>"
-msgstr ""
+msgstr "<i class=\"fa fa-fw fa-check\"/>\n"
+"                                <b>Bezahlt</b>"
 
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.portal_rma_page
@@ -85,7 +86,7 @@ msgstr ""
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.portal_rma_page
 msgid "<span class=\"badge badge-danger label-text-align\"><i class=\"fa fa-fw fa-times\"/> Cancelled</span>"
-msgstr ""
+msgstr "<span class=\"badge badge-danger label-text-align\"><i class=\"fa fa-fw fa-times\"/> Storniert</span>"
 
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.portal_rma_page
@@ -110,7 +111,7 @@ msgstr ""
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.portal_rma_page
 msgid "<strong class=\"d-block mb-1\">Delivery</strong>"
-msgstr ""
+msgstr "<strong class=\"d-block mb-1\">Lieferung</strong>"
 
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.portal_rma_page
@@ -125,12 +126,12 @@ msgstr ""
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.portal_rma_page
 msgid "<strong>Customer:</strong>"
-msgstr ""
+msgstr "<strong>Kunde:</strong>"
 
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.report_rma_document
 msgid "<strong>Date:</strong>"
-msgstr ""
+msgstr "<strong>Datum:</strong>"
 
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.report_rma_document
@@ -145,17 +146,17 @@ msgstr ""
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.report_rma_document
 msgid "<strong>Delivered qty:</strong>"
-msgstr ""
+msgstr "<strong>Ausgelieferte Menge:</strong>"
 
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.portal_rma_page
 msgid "<strong>Delivered quantity</strong>"
-msgstr ""
+msgstr "<strong>Ausgelieferte Menge</strong>"
 
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.report_rma_document
 msgid "<strong>Invoicing address:</strong>"
-msgstr ""
+msgstr "<strong>Rechnungsadresse:</strong>"
 
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.report_rma_document
@@ -185,7 +186,7 @@ msgstr ""
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.report_rma_document
 msgid "<strong>Product:</strong>"
-msgstr ""
+msgstr "<strong>Produkt:</strong>"
 
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.portal_rma_page
@@ -195,7 +196,7 @@ msgstr "<strong>Produkt</strong>"
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.report_rma_document
 msgid "<strong>Quantity:</strong>"
-msgstr ""
+msgstr "<strong>Menge:</strong>"
 
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.portal_rma_page
@@ -236,7 +237,7 @@ msgstr ""
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_rma__access_warning
 msgid "Access warning"
-msgstr ""
+msgstr "Zugriffswarnung"
 
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_rma__message_needaction
@@ -1305,7 +1306,7 @@ msgstr "SMS-Zustellungsfehler"
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_rma_delivery_wizard__scheduled_date
 msgid "Scheduled Date"
-msgstr ""
+msgstr "Geplantes Datum"
 
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_rma__access_token
@@ -1378,7 +1379,7 @@ msgstr ""
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_rma__origin
 msgid "Source Document"
-msgstr ""
+msgstr "Quelldokument"
 
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.rma_split_wizard_view_form2
