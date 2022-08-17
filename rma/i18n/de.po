@@ -14,7 +14,7 @@ msgstr ""
 "X-Crowdin-File: /[AmetrasIntelligence.rma] 13.0/rma/i18n/rma.pot\n"
 "X-Crowdin-File-ID: 4746\n"
 "Language: de_DE\n"
-"PO-Revision-Date: 2022-08-17 09:23\n"
+"PO-Revision-Date: 2022-08-17 13:08\n"
 
 #. module: rma
 #: model:mail.template,report_name:rma.mail_template_rma_notification
@@ -1442,7 +1442,7 @@ msgstr ""
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_rma__tag_ids
 msgid "Tags"
-msgstr ""
+msgstr "Tags"
 
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.rma_view_form
@@ -1583,7 +1583,7 @@ msgstr ""
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_rma__product_uom
 msgid "UoM"
-msgstr ""
+msgstr "Maßeinheit"
 
 #. module: rma
 #: model:ir.model.fields.selection,name:rma.selection__rma__priority__2
