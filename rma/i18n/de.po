@@ -14,7 +14,7 @@ msgstr ""
 "X-Crowdin-File: /[AmetrasIntelligence.rma] 13.0/rma/i18n/rma.pot\n"
 "X-Crowdin-File-ID: 4746\n"
 "Language: de_DE\n"
-"PO-Revision-Date: 2022-08-12 08:18\n"
+"PO-Revision-Date: 2022-08-17 09:23\n"
 
 #. module: rma
 #: model:mail.template,report_name:rma.mail_template_rma_notification
@@ -963,7 +963,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:rma.view_partner_form
 #: model_terms:ir.ui.view,arch_db:rma.view_picking_form
 msgid "RMA"
-msgstr ""
+msgstr "Reklamation"
 
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.portal_my_rmas
