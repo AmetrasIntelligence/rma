@@ -14,7 +14,7 @@ msgstr ""
 "X-Crowdin-File: /[AmetrasIntelligence.rma] 13.0/rma_sale_mrp/i18n/rma_sale_mrp.pot\n"
 "X-Crowdin-File-ID: 4750\n"
 "Language: de_DE\n"
-"PO-Revision-Date: 2022-08-17 09:23\n"
+"PO-Revision-Date: 2022-08-17 16:33\n"
 
 #. module: rma_sale_mrp
 #: model_terms:ir.ui.view,arch_db:rma_sale_mrp.portal_rma_page
@@ -224,7 +224,7 @@ msgstr ""
 #. module: rma_sale_mrp
 #: model:ir.model.fields,field_description:rma_sale_mrp.field_sale_order_line_rma_wizard_component__operation_id
 msgid "Requested operation"
-msgstr ""
+msgstr "Angeforderter Vorgang"
 
 #. module: rma_sale_mrp
 #: model:ir.model.fields,field_description:rma_sale_mrp.field_rma__rma_kit_register
