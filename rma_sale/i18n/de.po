@@ -14,7 +14,7 @@ msgstr ""
 "X-Crowdin-File: /[AmetrasIntelligence.rma] 13.0/rma_sale/i18n/rma_sale.pot\n"
 "X-Crowdin-File-ID: 4748\n"
 "Language: de_DE\n"
-"PO-Revision-Date: 2022-08-17 15:35\n"
+"PO-Revision-Date: 2022-08-17 16:33\n"
 
 #. module: rma_sale
 #: code:addons/rma_sale/controllers/sale_portal.py:0
@@ -151,7 +151,7 @@ msgstr ""
 #. module: rma_sale
 #: model:ir.actions.act_window,name:rma_sale.sale_order_create_rma_action
 msgid "Create RMAs"
-msgstr ""
+msgstr "Reklamationen anlegen"
 
 #. module: rma_sale
 #: model:ir.model.fields,field_description:rma_sale.field_sale_order_line_rma_wizard__create_uid
@@ -284,7 +284,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:rma_sale.field_sale_order_line_rma_wizard__operation_id
 #: model_terms:ir.ui.view,arch_db:rma_sale.sale_order_portal_template
 msgid "Requested operation"
-msgstr ""
+msgstr "Angeforderter Vorgang"
 
 #. module: rma_sale
 #: model:ir.model.fields,field_description:rma_sale.field_rma__sale_line_id
