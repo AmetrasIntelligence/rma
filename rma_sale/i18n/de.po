@@ -14,7 +14,7 @@ msgstr ""
 "X-Crowdin-File: /[AmetrasIntelligence.rma] 13.0/rma_sale/i18n/rma_sale.pot\n"
 "X-Crowdin-File-ID: 4748\n"
 "Language: de_DE\n"
-"PO-Revision-Date: 2022-08-17 09:23\n"
+"PO-Revision-Date: 2022-08-17 15:35\n"
 
 #. module: rma_sale
 #: code:addons/rma_sale/controllers/sale_portal.py:0
@@ -234,12 +234,12 @@ msgstr "Auftrag"
 #. module: rma_sale
 #: model:ir.model.fields,field_description:rma_sale.field_rma__picking_id
 msgid "Origin Delivery"
-msgstr ""
+msgstr "Ursprungslieferung"
 
 #. module: rma_sale
 #: model:ir.model.fields,field_description:rma_sale.field_rma__move_id
 msgid "Origin move"
-msgstr ""
+msgstr "Ursprüngliche Bewegung"
 
 #. module: rma_sale
 #: model:ir.model.fields,field_description:rma_sale.field_rma__product_id
@@ -273,7 +273,7 @@ msgstr ""
 #. module: rma_sale
 #: model:ir.model.fields,field_description:rma_sale.field_sale_order__rma_ids
 msgid "RMAs"
-msgstr ""
+msgstr "Reklamationen"
 
 #. module: rma_sale
 #: model_terms:ir.ui.view,arch_db:rma_sale.sale_order_portal_template
