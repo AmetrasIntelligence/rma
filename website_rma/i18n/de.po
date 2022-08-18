@@ -14,13 +14,13 @@ msgstr ""
 "X-Crowdin-File: /[AmetrasIntelligence.rma] 13.0/website_rma/i18n/website_rma.pot\n"
 "X-Crowdin-File-ID: 4752\n"
 "Language: de_DE\n"
-"PO-Revision-Date: 2022-08-17 15:35\n"
+"PO-Revision-Date: 2022-08-18 12:23\n"
 
 #. module: website_rma
 #: model_terms:ir.ui.view,arch_db:website_rma.request_rma_thanks_page_ir_ui_view
 #: model_terms:website.page,arch_db:website_rma.request_rma_thanks_page
 msgid "&amp;times;"
-msgstr ""
+msgstr "&amp;Zeiten;"
 
 #. module: website_rma
 #: model:ir.model,name:website_rma.model_res_config_settings
@@ -31,25 +31,25 @@ msgstr "Konfigurationseinstellung"
 #: model:ir.model.fields,field_description:website_rma.field_res_config_settings__rma_default_user_id
 #: model:ir.model.fields,field_description:website_rma.field_website__rma_default_user_id
 msgid "Default Responsible"
-msgstr ""
+msgstr "Standard Verantwortlichkeit"
 
 #. module: website_rma
 #: model:ir.model.fields,field_description:website_rma.field_res_config_settings__rma_default_team_id
 #: model:ir.model.fields,field_description:website_rma.field_website__rma_default_team_id
 msgid "Default Team"
-msgstr ""
+msgstr "Standardteam"
 
 #. module: website_rma
 #: model:ir.model.fields,help:website_rma.field_res_config_settings__rma_default_user_id
 #: model:ir.model.fields,help:website_rma.field_website__rma_default_user_id
 msgid "Default responsible for new leads created through the 'Request RMA' form."
-msgstr ""
+msgstr "Standardmäßig verantwortlich für neue Leads, die über das 'Reklamation anfordern' Formular erstellt wurden."
 
 #. module: website_rma
 #: model:ir.model.fields,help:website_rma.field_res_config_settings__rma_default_team_id
 #: model:ir.model.fields,help:website_rma.field_website__rma_default_team_id
 msgid "Default team for new RMAs created through the 'Request RMA' form."
-msgstr ""
+msgstr "Standardteam für neue Reklamationen erstellt durch das 'Reklamation anfordern'-Formular."
 
 #. module: website_rma
 #: model_terms:ir.ui.view,arch_db:website_rma.request_rma
@@ -64,12 +64,12 @@ msgstr "Modelle"
 #. module: website_rma
 #: model_terms:ir.ui.view,arch_db:website_rma.request_rma
 msgid "Operation"
-msgstr ""
+msgstr "Vorgang"
 
 #. module: website_rma
 #: model_terms:ir.ui.view,arch_db:website_rma.request_rma
 msgid "Our team will process it an will reach you once it's validated."
-msgstr ""
+msgstr "Unser Team wird es bearbeiten und Sie benachrichtigen, sobald es bestätigt ist."
 
 #. module: website_rma
 #: model_terms:ir.ui.view,arch_db:website_rma.request_rma
@@ -89,7 +89,7 @@ msgstr "Reklamation"
 #. module: website_rma
 #: model_terms:ir.ui.view,arch_db:website_rma.res_config_settings_view_form
 msgid "RMA Responsible"
-msgstr ""
+msgstr "Reklamationsverantwortlicher"
 
 #. module: website_rma
 #: model_terms:ir.ui.view,arch_db:website_rma.res_config_settings_view_form
@@ -105,17 +105,17 @@ msgstr "Anfrage"
 #: model_terms:ir.ui.view,arch_db:website_rma.request_rma
 #: model_terms:ir.ui.view,arch_db:website_rma.res_config_settings_view_form
 msgid "Request RMA"
-msgstr ""
+msgstr "Reklamation anfordern"
 
 #. module: website_rma
 #: model_terms:ir.ui.view,arch_db:website_rma.res_config_settings_view_form
 msgid "Request RMA Form"
-msgstr ""
+msgstr "Reklamation anfordern Formular"
 
 #. module: website_rma
 #: model_terms:ir.ui.view,arch_db:website_rma.res_config_settings_view_form
 msgid "Return Merchandise Authorization (RMA)"
-msgstr ""
+msgstr "Warenrückgabe (Reklamation)"
 
 #. module: website_rma
 #: model_terms:ir.ui.view,arch_db:website_rma.res_config_settings_view_form
@@ -131,36 +131,36 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:website_rma.request_rma_thanks_page_ir_ui_view
 #: model_terms:website.page,arch_db:website_rma.request_rma_thanks_page
 msgid "Thanks!"
-msgstr ""
+msgstr "Dankeschön!"
 
 #. module: website_rma
 #: model_terms:ir.ui.view,arch_db:website_rma.request_rma_thanks_page_ir_ui_view
 #: model_terms:website.page,arch_db:website_rma.request_rma_thanks_page
 msgid "We will get back to you shortly."
-msgstr ""
+msgstr "Wir melden uns in Kürze bei Ihnen."
 
 #. module: website_rma
 #: model:ir.model,name:website_rma.model_website
 msgid "Website"
-msgstr ""
+msgstr "Website"
 
 #. module: website_rma
 #: model_terms:ir.ui.view,arch_db:website_rma.contact_us_request_rma
 #: model_terms:ir.ui.view,arch_db:website_rma.portal_my_home_rma
 msgid "You can request an RMA"
-msgstr ""
+msgstr "Sie können eine Reklamation anfordern"
 
 #. module: website_rma
 #: model_terms:ir.ui.view,arch_db:website_rma.request_rma_thanks_page_ir_ui_view
 #: model_terms:website.page,arch_db:website_rma.request_rma_thanks_page
 msgid "Your request has been sent successfully."
-msgstr ""
+msgstr "Ihre Anfrage wurde erfolgreich gesendet."
 
 #. module: website_rma
 #: model_terms:ir.ui.view,arch_db:website_rma.contact_us_request_rma
 #: model_terms:ir.ui.view,arch_db:website_rma.portal_my_home_rma
 msgid "here"
-msgstr ""
+msgstr "hier"
 
 #. module: website_rma
 #: model_terms:ir.ui.view,arch_db:website_rma.contact_us_request_rma
@@ -179,5 +179,5 @@ msgstr ""
 #. module: website_rma
 #: model_terms:ir.ui.view,arch_db:website_rma.res_config_settings_view_form
 msgid "page"
-msgstr ""
+msgstr "seite"
 
