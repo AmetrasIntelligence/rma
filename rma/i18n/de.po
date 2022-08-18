@@ -14,7 +14,7 @@ msgstr ""
 "X-Crowdin-File: /[AmetrasIntelligence.rma] 13.0/rma/i18n/rma.pot\n"
 "X-Crowdin-File-ID: 4746\n"
 "Language: de_DE\n"
-"PO-Revision-Date: 2022-08-17 16:33\n"
+"PO-Revision-Date: 2022-08-18 12:23\n"
 
 #. module: rma
 #: model:mail.template,report_name:rma.mail_template_rma_notification
@@ -211,7 +211,7 @@ msgstr "<strong>RMA Datum</strong>"
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.report_rma_document
 msgid "<strong>RMA Note:</strong>"
-msgstr ""
+msgstr "<strong>Reklamation Anmerkung:</strong>"
 
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.portal_rma_page
@@ -270,27 +270,27 @@ msgstr "Aktivitätsstatus"
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_rma_team__alias_id
 msgid "Alias"
-msgstr ""
+msgstr "Alias"
 
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_rma_team__alias_contact
 msgid "Alias Contact Security"
-msgstr ""
+msgstr "Alias-Kontaktsicherheit"
 
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_rma_team__alias_name
 msgid "Alias Name"
-msgstr ""
+msgstr "Alias-Name"
 
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_rma_team__alias_domain
 msgid "Alias domain"
-msgstr ""
+msgstr "Alias-Domäne"
 
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_rma_team__alias_model_id
 msgid "Aliased Model"
-msgstr ""
+msgstr "Alias-Modell"
 
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.rma_tag_view_search
@@ -417,7 +417,7 @@ msgstr "Reklamationen anlegen"
 #. module: rma
 #: model_terms:ir.actions.act_window,help:rma.action_rma_tag
 msgid "Create a new RMA tag"
-msgstr ""
+msgstr "Neues Reklamation-Tag erstellen"
 
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_rma__create_uid
@@ -449,7 +449,7 @@ msgstr "Kunde"
 #. module: rma
 #: model:ir.model.fields,help:rma.field_rma__access_url
 msgid "Customer Portal URL"
-msgstr ""
+msgstr "Kundenportal-URL"
 
 #. module: rma
 #: code:addons/rma/controllers/main.py:0
@@ -499,12 +499,12 @@ msgstr "Lieferung"
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_rma__delivery_picking_count
 msgid "Delivery count"
-msgstr ""
+msgstr "Lieferanzahl"
 
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_rma__delivery_move_ids
 msgid "Delivery reservation"
-msgstr ""
+msgstr "Lieferreservierung"
 
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_rma__description
@@ -542,7 +542,7 @@ msgstr "E-mail"
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.rma_team_view_form
 msgid "Email Alias"
-msgstr ""
+msgstr "E-Mail Alias"
 
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.res_config_settings_view_form
@@ -570,7 +570,7 @@ msgstr "Extrahierte Reklamationen"
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_rma__origin_split_rma_id
 msgid "Extracted from"
-msgstr ""
+msgstr "Extrahiert von"
 
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_rma__message_follower_ids
@@ -608,7 +608,7 @@ msgstr "ID"
 #. module: rma
 #: model:ir.model.fields,help:rma.field_rma_team__alias_parent_thread_id
 msgid "ID of the parent record holding the alias (example: project holding the task creation alias)"
-msgstr ""
+msgstr "ID des übergeordneten Datensatzes, der den Alias hält (Beispiel: Projekt, das den Alias für die Erstellung der Aufgabe hält)"
 
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_rma__activity_exception_icon
@@ -618,7 +618,7 @@ msgstr "Symbol"
 #. module: rma
 #: model:ir.model.fields,help:rma.field_rma__activity_exception_icon
 msgid "Icon to indicate an exception activity."
-msgstr ""
+msgstr "Symbol zur Angabe einer Ausnahmeaktivität."
 
 #. module: rma
 #: model:ir.model.fields,help:rma.field_rma__message_needaction
@@ -727,7 +727,7 @@ msgstr "Hauptanhang"
 #. module: rma
 #: model_terms:ir.actions.act_window,help:rma.action_rma_tag
 msgid "Manage RMA tags to better classify them for tracking and analysis purposes."
-msgstr ""
+msgstr "Verwalten Sie Reklamation-Tags, um sie für Verfolgungs- und Analysezwecke besser zu klassifizieren."
 
 #. module: rma
 #: model:ir.module.category,description:rma.rma_module_category
@@ -792,7 +792,7 @@ msgstr "Keine der selektierten Reklamationen kann einen Austausch vornehmen."
 #: code:addons/rma/models/rma.py:0
 #, python-format
 msgid "None of the selected RMAs can perform a return."
-msgstr ""
+msgstr "Keiner der selektierten Reklamationen kann eine Rückgabe vornehmen."
 
 #. module: rma
 #: model:ir.model.fields.selection,name:rma.selection__rma__priority__1
@@ -1001,12 +1001,12 @@ msgstr "Reklamation-Lieferaufträge"
 #. module: rma
 #: model:ir.model,name:rma.model_rma_delivery_wizard
 msgid "RMA Delivery Wizard"
-msgstr ""
+msgstr "Reklamation-Lieferassistent"
 
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_stock_warehouse__rma_in_type_id
 msgid "RMA In Type"
-msgstr ""
+msgstr "Reklamation vom Typ"
 
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_stock_warehouse__rma_loc_id
@@ -1021,7 +1021,7 @@ msgstr "Reklamationsbenachrichtigung"
 #. module: rma
 #: model:mail.message.subtype,name:rma.mt_rma_notification
 msgid "RMA Notificatoin"
-msgstr ""
+msgstr "Reklamationsbenachrichtigung"
 
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.portal_rma_page
@@ -1093,7 +1093,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:rma.field_res_users__rma_count
 #: model:ir.model.fields,field_description:rma.field_stock_picking__rma_count
 msgid "RMA count"
-msgstr ""
+msgstr "Reklamation-Anzahl"
 
 #. module: rma
 #: model:mail.message.subtype,description:rma.mt_rma_draft
@@ -1196,12 +1196,12 @@ msgstr "Erstattet"
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_rma__remaining_qty
 msgid "Remaining delivered qty"
-msgstr ""
+msgstr "Verbleibende gelieferte Menge"
 
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_rma__remaining_qty_to_done
 msgid "Remaining delivered qty to done"
-msgstr ""
+msgstr "Verbleibende gelieferte Menge zu erledigen"
 
 #. module: rma
 #: model:rma.operation,name:rma.rma_operation_return
@@ -1348,13 +1348,13 @@ msgstr "Sequenz"
 #: code:addons/rma/models/stock_warehouse.py:0
 #, python-format
 msgid "Sequence RMA in"
-msgstr ""
+msgstr "Nummernfolge Reklamation-Wareneingang"
 
 #. module: rma
 #: code:addons/rma/models/stock_warehouse.py:0
 #, python-format
 msgid "Sequence RMA out"
-msgstr ""
+msgstr "Nummernfolge Reklamation-Warenausgang"
 
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.rma_view_form
@@ -1530,7 +1530,7 @@ msgstr "Erstatten"
 #. module: rma
 #: model:ir.model,name:rma.model_stock_picking
 msgid "Transfer"
-msgstr ""
+msgstr "Transfer"
 
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_rma_delivery_wizard__type
