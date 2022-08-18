@@ -14,7 +14,7 @@ msgstr ""
 "X-Crowdin-File: /[AmetrasIntelligence.rma] 13.0/rma_sale/i18n/rma_sale.pot\n"
 "X-Crowdin-File-ID: 4748\n"
 "Language: de_DE\n"
-"PO-Revision-Date: 2022-08-17 16:33\n"
+"PO-Revision-Date: 2022-08-18 12:23\n"
 
 #. module: rma_sale
 #: code:addons/rma_sale/controllers/sale_portal.py:0
@@ -263,7 +263,7 @@ msgstr "Reklamation"
 #. module: rma_sale
 #: model:ir.model.fields,field_description:rma_sale.field_sale_order__rma_count
 msgid "RMA count"
-msgstr ""
+msgstr "Reklamation-Anzahl"
 
 #. module: rma_sale
 #: model:ir.model.fields,field_description:rma_sale.field_sale_order_rma_wizard__location_id
