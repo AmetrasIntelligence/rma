@@ -14,7 +14,7 @@ msgstr ""
 "X-Crowdin-File: /[AmetrasIntelligence.rma] 13.0/rma/i18n/rma.pot\n"
 "X-Crowdin-File-ID: 4746\n"
 "Language: de_DE\n"
-"PO-Revision-Date: 2022-08-18 12:23\n"
+"PO-Revision-Date: 2022-09-07 14:43\n"
 
 #. module: rma
 #: model:mail.template,report_name:rma.mail_template_rma_notification
@@ -24,7 +24,7 @@ msgstr "${(object.name or '')}"
 #. module: rma
 #: model:mail.template,subject:rma.mail_template_rma_notification
 msgid "${object.company_id.name} RMA (Ref ${object.name or 'n/a' })"
-msgstr ""
+msgstr "${object.company_id.name} Reklamation (Ref ${object.name or 'n/a' })"
 
 #. module: rma
 #: code:addons/rma/models/rma_team.py:0
@@ -53,7 +53,19 @@ msgid "<div style=\"margin: 0px; padding: 0px;\">\n"
 "</p>\n"
 "            </div>\n"
 "        "
-msgstr ""
+msgstr "<div style=\"margin: 0px; padding: 0px;\">\n"
+"                <p style=\"margin: 0px; padding: 0px; font-size: 13px;\">\n"
+"    Sehr geehrter ${object.partner_id.name}\n"
+"    % if object.partner_id.parent_id:\n"
+"        (${object.partner_id.parent_id.name})\n"
+"    % endif\n"
+"    <br/><br/>\n"
+"    Hier ist Ihre Reklamation <strong>${object.name}</strong> von ${object.company_id.name}.\n"
+"    <br/><br/>\n"
+"    Zögern Sie nicht, uns zu kontaktieren, wenn Sie Fragen haben.\n"
+"</p>\n"
+"            </div>\n"
+"        "
 
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.portal_rma_page
@@ -71,17 +83,18 @@ msgstr "<i class=\"fa fa-fw fa-check\"/>\n"
 #: model_terms:ir.ui.view,arch_db:rma.portal_rma_page
 msgid "<i class=\"fa fa-fw fa-clock-o\"/>\n"
 "                                <b>Waiting Payment</b>"
-msgstr ""
+msgstr "<i class=\"fa fa-fw fa-clock-o\"/>\n"
+"                                <b>Warte auf Bezahlung</b>"
 
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.portal_rma_page
 msgid "<i class=\"fa fa-pencil-square-o mr-1\" role=\"img\" aria-label=\"Download\" title=\"Download\"/>"
-msgstr ""
+msgstr "<i class=\"fa fa-pencil-square-o mr-1\" role=\"img\" aria-label=\"Download\" title=\"Download\"/>"
 
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.portal_rma_page
 msgid "<i class=\"fa fa-truck mr-1\" role=\"img\" aria-label=\"Download\" title=\"Download\"/>"
-msgstr ""
+msgstr "<i class=\"fa fa-truck mr-1\" role=\"img\" aria-label=\"Download\" title=\"Download\"/>"
 
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.portal_rma_page
@@ -91,17 +104,17 @@ msgstr "<span class=\"badge badge-danger label-text-align\"><i class=\"fa fa-fw 
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.portal_rma_page
 msgid "<span class=\"badge badge-info label-text-align\"><i class=\"fa fa-fw fa-clock-o\"/> Preparation</span>"
-msgstr ""
+msgstr "<span class=\"badge badge-info label-text-align\"><i class=\"fa fa-fw fa-clock-o\"/> Vorbereitung</span>"
 
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.portal_rma_page
 msgid "<span class=\"badge badge-success label-text-align\"><i class=\"fa fa-fw fa-truck\"/> Shipped</span>"
-msgstr ""
+msgstr "<span class=\"badge badge-success label-text-align\"><i class=\"fa fa-fw fa-truck\"/> Versandt</span>"
 
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.portal_rma_page
 msgid "<span class=\"badge badge-warning label-text-align\"><i class=\"fa fa-fw fa-clock-o\"/> Partially Available</span>"
-msgstr ""
+msgstr "<span class=\"badge badge-warning label-text-align\"><i class=\"fa fa-fw fa-clock-o\"/> Teilweise verfügbar</span>"
 
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.res_config_settings_view_form
@@ -116,7 +129,7 @@ msgstr "<strong class=\"d-block mb-1\">Lieferung</strong>"
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.portal_rma_page
 msgid "<strong class=\"d-block mb-1\">Reception</strong>"
-msgstr ""
+msgstr "<strong class=\"d-block mb-1\">Eingang</strong>"
 
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.portal_rma_page
@@ -260,7 +273,7 @@ msgstr "Aktivitäten"
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_rma__activity_exception_decoration
 msgid "Activity Exception Decoration"
-msgstr ""
+msgstr "Aktivität Ausnahme Dekoration"
 
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_rma__activity_state
@@ -639,7 +652,7 @@ msgstr "Wenn aktiviert, haben einige Nachrichten einen Zustellfehler."
 #. module: rma
 #: model:ir.model.fields,help:rma.field_rma_team__active
 msgid "If the active field is set to false, it will allow you to hide the RMA Team without removing it."
-msgstr ""
+msgstr "Wenn das aktive Feld auf unwahr gesetzt ist, können Sie das Reklamation-Team ausblenden, ohne es zu entfernen."
 
 #. module: rma
 #: code:addons/rma/models/rma.py:0
@@ -732,7 +745,7 @@ msgstr "Verwalten Sie Reklamation-Tags, um sie für Verfolgungs- und Analysezwec
 #. module: rma
 #: model:ir.module.category,description:rma.rma_module_category
 msgid "Manage Return Merchandise Authorizations (RMAs)."
-msgstr ""
+msgstr "Reklamationen verwalten."
 
 #. module: rma
 #: model:res.groups,name:rma.rma_group_manager
@@ -945,7 +958,7 @@ msgstr "Menge zu extrahieren"
 #: code:addons/rma/models/rma.py:0
 #, python-format
 msgid "Quantity to extract cannot be greater than remaining delivery quantity (%s %s)"
-msgstr ""
+msgstr "Die zu extrahierende Menge darf nicht größer sein als die verbleibende Liefermenge (%s %s)"
 
 #. module: rma
 #: model:ir.model.fields,help:rma.field_rma_split_wizard__product_uom_qty
@@ -1033,7 +1046,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:rma.portal_my_home_rma
 #: model_terms:ir.ui.view,arch_db:rma.portal_my_rmas
 msgid "RMA Orders"
-msgstr ""
+msgstr "Reklamationsaufträge"
 
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_stock_warehouse__rma_out_type_id
@@ -1054,7 +1067,7 @@ msgstr "Reklamationsberichte"
 #. module: rma
 #: model:ir.model,name:rma.model_rma_split_wizard
 msgid "RMA Split Wizard"
-msgstr ""
+msgstr "Reklamation-Aufteilung Wizard"
 
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.view_rma_tag_form
@@ -1103,12 +1116,12 @@ msgstr "Reklamationen im Entwurfsstatus"
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_stock_move__rma_receiver_ids
 msgid "RMA receivers"
-msgstr ""
+msgstr "Reklamationsempfänger"
 
 #. module: rma
 #: model:ir.model.fields,help:rma.field_stock_warehouse__rma
 msgid "RMA related products can be stored in this warehouse."
-msgstr ""
+msgstr "Reklamationsrelevante Produkte können in diesem Lager gelagert werden."
 
 #. module: rma
 #: model:ir.model,name:rma.model_rma_operation
@@ -1118,7 +1131,7 @@ msgstr "Angeforderter Vorgang"
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_stock_move__rma_id
 msgid "RMA return"
-msgstr ""
+msgstr "Reklamation Rücksendung"
 
 #. module: rma
 #: model:ir.actions.act_window,name:rma.rma_team_action
@@ -1157,7 +1170,7 @@ msgstr "Empfangen"
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_rma__reception_move_id
 msgid "Reception move"
-msgstr ""
+msgstr "Eingangsbewegung"
 
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_rma_team__alias_force_thread_id
@@ -1229,13 +1242,13 @@ msgstr "Ersetzt"
 #: code:addons/rma/models/rma.py:0
 #, python-format
 msgid "Replacement: Move <a href=\"#\" data-oe-model=\"stock.move\" data-oe-id=\"%d\">%s</a> (Picking <a href=\"#\" data-oe-model=\"stock.picking\" data-oe-id=\"%d\">%s</a>) has been created."
-msgstr ""
+msgstr "Austausch: Bewegung <a href=\"#\" data-oe-model=\"stock.move\" data-oe-id=\"%d\">%s</a> (Picking <a href=\"#\" data-oe-model=\"stock.picking\" data-oe-id=\"%d\">%s</a>) wurde angelegt."
 
 #. module: rma
 #: code:addons/rma/models/rma.py:0
 #, python-format
 msgid "Replacement:<br/>Product <a href=\"#\" data-oe-model=\"product.product\" data-oe-id=\"%d\">%s</a><br/>Quantity %f %s<br/>This replacement did not create a new move, but one of the previously created moves was updated with this data."
-msgstr ""
+msgstr "Austausch:<br/>Produkt <a href=\"#\" data-oe-model=\"product.product\" data-oe-id=\"%d\">%s</a><br/>Menge %f %s<br/>Dieser Austausch hat keine neue Bewegung angelegt, aber eine vorher angelegte Bewegung wurde mit diesen Daten aktualisiert."
 
 #. module: rma
 #: model:ir.ui.menu,name:rma.rma_reporting_menu
@@ -1267,7 +1280,7 @@ msgstr "Verantwortlicher Benutzer"
 #. module: rma
 #: model:ir.model,name:rma.model_stock_return_picking
 msgid "Return Picking"
-msgstr ""
+msgstr "Rücksendung"
 
 #. module: rma
 #: model:ir.actions.act_window,name:rma.rma_delivery_wizard_action
@@ -1280,7 +1293,7 @@ msgstr "Zurück zum Kunden"
 #: code:addons/rma/models/rma.py:0
 #, python-format
 msgid "Return: <a href=\"#\" data-oe-model=\"stock.picking\" data-oe-id=\"%d\">%s</a> has been created."
-msgstr ""
+msgstr "Rücksendung: <a href=\"#\" data-oe-model=\"stock.picking\" data-oe-id=\"%d\">%s</a> wurde angelegt."
 
 #. module: rma
 #: model:ir.model.fields.selection,name:rma.selection__rma__state__returned
@@ -1396,7 +1409,7 @@ msgstr "Reklamation aufteilen"
 #: code:addons/rma/models/rma.py:0
 #, python-format
 msgid "Split: <a href=\"#\" data-oe-model=\"rma\" data-oe-id=\"%d\">%s</a> has been created."
-msgstr ""
+msgstr "Aufteilung: <a href=\"#\" data-oe-model=\"rma\" data-oe-id=\"%d\">%s</a> wurde erstellt."
 
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_rma__state
@@ -1417,7 +1430,10 @@ msgid "Status based on activities\n"
 "Overdue: Due date is already passed\n"
 "Today: Activity date is today\n"
 "Planned: Future activities."
-msgstr ""
+msgstr "Status basierend auf Aktivitäten\n"
+"Überfällig: Fälligkeitsdatum ist bereits überschritten\n"
+"Heute: Aktivitätsdatum ist heute\n"
+"Geplant: Zukünftige Aktivitäten."
 
 #. module: rma
 #: model:ir.model,name:rma.model_stock_move
@@ -1489,19 +1505,19 @@ msgstr ""
 #: code:addons/rma/models/stock_move.py:0
 #, python-format
 msgid "The quantity done for the product '%s' must be equal to its initial demand because the stock move is linked to an RMA (%s)."
-msgstr ""
+msgstr "Die erledigte Menge für Produkt '%s' muss gleich dem ursprünglichen Bedarf sein, da die Bestandsbewegung an die Reklamation (%s) gebunden ist."
 
 #. module: rma
 #: code:addons/rma/models/rma.py:0
 #, python-format
 msgid "The quantity to return is greater than remaining quantity."
-msgstr ""
+msgstr "Die Menge zum Zurücksenden ist größer als die verbleibende Menge."
 
 #. module: rma
 #: code:addons/rma/models/account_move.py:0
 #, python-format
 msgid "There is at least one invoice lines whose quantity is less than the quantity specified in its linked RMA."
-msgstr ""
+msgstr "Es gibt mindestens eine Rechnungsposition, dessen Menge geringer ist als in der verknüpften Reklamation angegeben."
 
 #. module: rma
 #: code:addons/rma/models/rma.py:0
@@ -1519,7 +1535,7 @@ msgstr "Diese Reklamation kann keinen Austausch vornehmen."
 #: code:addons/rma/models/rma.py:0
 #, python-format
 msgid "This RMA cannot perform a return."
-msgstr ""
+msgstr "Diese Reklamation kann keine Rücksendung vornehmen."
 
 #. module: rma
 #: model:ir.actions.server,name:rma.rma_refund_action_server
@@ -1545,7 +1561,7 @@ msgstr "Operationstyp"
 #. module: rma
 #: model:ir.model.fields,help:rma.field_rma__activity_exception_decoration
 msgid "Type of the exception activity on record."
-msgstr ""
+msgstr "Typ der protokollierten Ausnahmeaktivität."
 
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.rma_view_search
@@ -1660,22 +1676,22 @@ msgstr "Sie können keine Reklamationen löschen, die nicht im Entwurfsstatus si
 #: code:addons/rma/wizard/stock_picking_return.py:0
 #, python-format
 msgid "You must specify the 'Customer' in the 'Stock Picking' from which RMAs will be created"
-msgstr ""
+msgstr "Sie müssen den Kunden in der Lagerbewegung auswählen für den die Reklamation angelegt werden soll"
 
 #. module: rma
 #: model:ir.actions.report,print_report_name:rma.report_rma_action
 msgid "object._get_report_base_filename()"
-msgstr ""
+msgstr "object._get_report_base_filename()"
 
 #. module: rma
 #: model:res.groups,comment:rma.rma_group_user_all
 msgid "the user will have access to all records of everyone in the RMA application."
-msgstr ""
+msgstr "der Benutzer wird Zugriff auf alle Datensätze in der Reklamationsanwendung erhalten."
 
 #. module: rma
 #: model:res.groups,comment:rma.rma_group_user_own
 msgid "the user will have access to his own data in the RMA application."
-msgstr ""
+msgstr "der Benutzer hat Zugriff auf seine eigenen Daten in der Reklamationsanwendung."
 
 #. module: rma
 #: model:res.groups,comment:rma.rma_group_manager
